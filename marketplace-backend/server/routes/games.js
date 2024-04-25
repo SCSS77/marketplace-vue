@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const Game = require('../models/Game');
+const Product = require('../models/Product');
 
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
   try {
-    const games = await Game.find();
-    res.json(games);
+    const products = await Product.findOne();
+    res.json(products.games);
   } catch (err) {
     next(err);
   }

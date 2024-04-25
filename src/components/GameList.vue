@@ -23,7 +23,7 @@ const games = ref<Game[]>([]);
 
 onMounted(async () => {
   try {
-    const response = await axios.get<Game[]>('http://localhost:3000/games');
+    const response = await axios.get<Game[]>('http://localhost:3000/api/games');
     games.value = response.data;
   } catch (error) {
     console.error('Error fetching games:', error);
@@ -32,5 +32,4 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-
 </style>

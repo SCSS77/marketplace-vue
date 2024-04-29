@@ -17,7 +17,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: 'My App'
+      default: 'Marketplace'
     }
   }
 }

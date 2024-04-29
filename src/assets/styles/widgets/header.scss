@@ -1,0 +1,47 @@
+.header {
+  background: $white;
+  position: relative;
+  padding: 0 1.5rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid hsl(219, 35%, 92%);
+  }
+
+  &__logo {
+    margin-right: 3.5313rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2.0625rem;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 2.9rem;
+    padding-bottom: 2.9rem;
+    transition: width .35s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: calc(100% - 3px);
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: #ff7d1a;
+      transition: width .35s ease-in-out;
+    }
+  }
+
+  &__link {
+    font-size: .9375rem;
+    color: $black;
+    transition: color .35s ease-in-out;
+    text-decoration: none;
+  }
+}

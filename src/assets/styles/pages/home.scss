@@ -1,0 +1,13 @@
+.home {
+
+  &__container {
+    display: grid;
+    grid-template-columns: clamp(21.875rem, 3.969rem + 37.255vw, 27.813rem) minmax(auto, 445px);
+    gap: 20px;
+    align-items: center;
+    max-width: 1015px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: clamp(3rem,-4.916rem + 16.471vw,5.625rem);
+  }
+}

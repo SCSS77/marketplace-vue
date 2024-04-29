@@ -1,13 +1,15 @@
 <template>
-  <header>
-    <h1>{{ title }}</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__container container">
+      <h1 class="header__logo">{{ title }}</h1>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Home</a></li>
+          <li class="header__item"><a class="header__link" href="#">About</a></li>
+          <li class="header__item"><a class="header__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -23,30 +25,5 @@ export default {
 }
 </script>
 
-<style scoped>
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
+<style>
 </style>

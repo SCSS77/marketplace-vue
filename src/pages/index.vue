@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <Header />
-    <ProductList />
-    <Footer />
-  </div>
+  <Header />
+  <main class="home">
+    <div class="home__container">
+      <ProductList />
+      </div>
+    </main>
+  <Footer />
 </template>
 
 <script>
@@ -21,6 +23,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "@/assets/styles/common.scss";
+@import "@/assets/styles/pages/home.scss";
 </style>
 

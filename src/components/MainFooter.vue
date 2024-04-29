@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>&copy; {{ currentYear }} My Website</p>
+    <p>&copy; {{ currentYear }} Marketplace</p>
   </footer>
 </template>
 

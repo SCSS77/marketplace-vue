@@ -1,20 +1,24 @@
 <template>
   <div id="app">
-    <header>
-      <h1>Marketplace</h1>
-    </header>
-    <main>
-      <GameList />
-    </main>
-    <footer>
-      <p>© 2024 Marketplace</p>
-    </footer>
+    <router-view />
   </div>
 </template>
 
-<script lang="ts" setup>
-  import GameList from "@/components/GameList.vue";
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'App',
+});
 </script>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
+

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Accommodations",
+    "subcategories": [
+      {"id": 101, "name": "Hotels", "icon": "hotel"},
+      {"id": 102, "name": "Vacation Rentals", "icon": "apartment"},
+      {"id": 103, "name": "Cabins & Cottages", "icon": "cabin"}
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Restaurants",
+    "subcategories": [
+      {"id": 201, "name": "Cafes", "icon": "cafe"},
+      {"id": 202, "name": "Restaurants", "icon": "restaurant"},
+      {"id": 203, "name": "Bars", "icon": "bar"}
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Activities",
+    "subcategories": [
+      {"id": 301, "name": "Parks & Recreational Areas", "icon": "park"},
+      {"id": 302, "name": "Beaches", "icon": "beach"},
+      {"id": 303, "name": "Hiking & Excursions", "icon": "hiking"}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Veterinary Services",
+    "subcategories": [
+      {"id": 401, "name": "Veterinary Consultations", "icon": "vet"},
+      {"id": 402, "name": "Pet Care", "icon": "pet-care"},
+      {"id": 403, "name": "Veterinary Emergencies", "icon": "emergency"}
+    ]
+  }
+]

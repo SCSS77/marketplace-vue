@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const Product = require('../models/Product');
+const Category = require('../models/Category');
 
 router.get('/', async (req, res, next) => {
   try {
-    const products = await Product.findOne();
-    res.json(products.consoles);
+    const categories = await Category.find();
+    res.json(categories);
   } catch (err) {
     next(err);
   }

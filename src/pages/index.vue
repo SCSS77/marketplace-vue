@@ -2,7 +2,7 @@
   <Header />
   <main class="home">
     <div class="home__container">
-      <ProductList />
+      <CategoryList />
       </div>
     </main>
   <Footer />
@@ -10,14 +10,14 @@
 
 <script>
 import Header from '@/components/MainHeader.vue';
-import ProductList from '@/components/ProductList.vue';
+import CategoryList from '@/components/CategoryList.vue';
 import Footer from "@/components/MainFooter";
 
 export default {
   name: 'HomePage',
   components: {
     Header,
-    ProductList,
+    CategoryList,
     Footer
   }
 }

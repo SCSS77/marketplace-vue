@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
 /dist
-products.json
+categories.json
 
 
 # local env files

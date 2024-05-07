@@ -1,14 +1,14 @@
-# RetroGames Marketplace
+# PetFriendly Marketplace
 
 ## Description
-RetroGames Marketplace is a web application built with Vue.js, Node.js, MongoDB, and TypeScript. It serves as a platform for buying and selling retro video games.
+PetFriendly Marketplace is a web application that serves as a comprehensive platform for pet owners to find pet-friendly accommodations, services, and products. Whether you're looking for pet-friendly accommodations, restaurants, activities, or services like veterinary care and grooming, PetFriendly Marketplace has you covered. Additionally, discover and purchase unique pet products from small businesses.
 
 ## Features
-- Browse retro video games listings
-- Search for specific games
-- Add games to your cart
-- Checkout and purchase games
-- Seller dashboard for managing listings
+- Search for pet-friendly accommodations, restaurants, and activities
+- Discover services for pets, including veterinary care, grooming, and activities
+- Browse and purchase products from small businesses catering to pets
+- Add items to your favorites for easy access later
+- Easy-to-use interface for both pet owners and service providers
 
 ## Technologies Used
 - **Frontend**: Vue.js
@@ -18,7 +18,7 @@ RetroGames Marketplace is a web application built with Vue.js, Node.js, MongoDB,
 
 ## Installation
 1. Clone the repository: `git clone <repository-url>`
-2. Navigate to the project directory: `cd retrogames-marketplace`
+2. Navigate to the project directory: `cd petfriendly-marketplace`
 3. Install dependencies:
    - Frontend: `cd frontend && npm install`
    - Backend: `cd backend && npm install`
@@ -28,14 +28,14 @@ RetroGames Marketplace is a web application built with Vue.js, Node.js, MongoDB,
 6. Start the frontend application: `cd frontend && npm run serve`
 
 ## Usage
-1. Open your web browser and navigate to `http://localhost:8080` to access the RetroGames Marketplace frontend.
-2. Browse the available games, search for specific titles, and add them to your cart.
-3. Proceed to checkout and complete the purchase process.
-4. Sellers can access their dashboard to manage their listings.
+1. Open your web browser and navigate to `http://localhost:8080` to access the PetFriendly Marketplace frontend.
+2. Use the search functionality to find pet-friendly accommodations, restaurants, activities, and services in your area.
+3. Explore the listings and learn more about each place or service.
+4. Add items to your favorites for easy access later.
+5. Sellers and service providers can access their dashboard to manage their listings and orders.
 
 ## Contributing
 Contributions are welcome! Please follow the [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
-

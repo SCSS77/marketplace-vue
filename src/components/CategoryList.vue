@@ -1,6 +1,6 @@
 <template>
   <div class="categories">
-    <div class="category" v-for="category in categories" :key="category.id" :class="'category-' + category.id">
+    <div class="category" v-for="category in categories" :key="category.id" :class="'category-' + category.name.toLowerCase().replace(/\s/g, '-')">
       <h2 class="category__title">{{ category.name }}</h2>
     </div>
   </div>

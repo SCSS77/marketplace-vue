@@ -17,22 +17,22 @@
   height: 16rem;
   position: relative;
 
-  &-1 {
+  &-accommodations {
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("@/assets/images/explore/accomodations.jpg") no-repeat center;
     background-size: cover;
   }
 
-  &-2 {
+  &-restaurants {
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("@/assets/images/explore/restaurants.jpg") no-repeat center #d2d2d2;
     background-size: cover;
   }
 
-  &-3 {
+  &-activities {
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("@/assets/images/explore/activities.jpg") no-repeat center #d2d2d2;
     background-size: cover;
   }
 
-  &-4 {
+  &-veterinary-services {
     background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url("@/assets/images/explore/veterinary-services.jpg") no-repeat center #d2d2d2;
     background-size: cover;
   }

@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '@/pages/index.vue'
-import SearchPage from '@/views/SearchPage.vue';
+import SearchPage from '@/views/SearchPage.vue'
+import CategoryPage from '@/views/CategoryPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/category/:categoryId',
+    name: 'Category',
+    component: CategoryPage
   },
   {
     path: '/search',

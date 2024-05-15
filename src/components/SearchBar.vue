@@ -3,8 +3,7 @@
     <input
       type="text"
       v-model="searchQuery"
-      @input="handleSearch"
-      @keyup.enter="handleEnterPress"
+      @keyup.enter="handleSearch"
       placeholder="Search..."
       class="search-bar__input"
     />
@@ -13,7 +12,7 @@
     </button>
     <ul v-if="showResults" class="search-results">
       <li v-for="result in searchResults" :key="result.id">
-        <router-link :to="{ name: 'Category', params: { categoryId: result.id }}" class="search-result-item">
+        <router-link :to="{ name: 'Category', params: { categoryId: result.id } }" class="search-result-item">
           {{ result.name }}
         </router-link>
       </li>
@@ -24,7 +23,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import axios from 'axios';
-import { Subcategory, Category } from '@/interfaces/types';
+import { Category } from '@/interfaces/types';
 
 export default defineComponent({
   name: 'SearchBar',
@@ -51,18 +50,11 @@ export default defineComponent({
       }
     };
 
-    const handleEnterPress = (event: KeyboardEvent) => {
-      if (event.key === 'Enter') {
-        handleSearch();
-      }
-    };
-
     return {
       searchQuery,
       searchResults,
       showResults,
-      handleSearch,
-      handleEnterPress
+      handleSearch
     };
   }
 });

@@ -1,7 +1,8 @@
 <template>
   <Header />
   <main class="home">
-    <div class="home__container">
+    <div class="home__container container">
+      <BannerHome />
       <CategoryList />
       </div>
     </main>
@@ -10,6 +11,7 @@
 
 <script>
 import Header from '@/components/MainHeader.vue';
+import BannerHome from "@/components/BannerHome";
 import CategoryList from '@/components/CategoryList.vue';
 import Footer from "@/components/MainFooter";
 
@@ -17,6 +19,7 @@ export default {
   name: 'HomePage',
   components: {
     Header,
+    BannerHome,
     CategoryList,
     Footer
   }

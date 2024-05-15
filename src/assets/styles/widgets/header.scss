@@ -35,10 +35,17 @@
   }
 
   &__link {
+    align-items: center;
+    display: flex;
     font-size: .8375rem;
     font-weight: 600;
+    justify-content: center;
     color: $black;
     transition: color .35s ease-in-out;
     text-decoration: none;
+  }
+
+  &__icon {
+    margin-right: .2rem;
   }
 }

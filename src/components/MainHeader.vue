@@ -9,8 +9,8 @@
             <li class="header__item"><a class="header__link" href="#">Products</a></li>
           </ul>
         </nav>
-        <h1 class="header__logo">{{ title }}</h1>
-        <nav class="header__nav">
+        <SearchBar />
+        <nav class="header__nav header__nav--right">
           <ul class="header__list">
             <li class="header__item"><a class="header__link" href="#">Language</a></li>
             <li class="header__item">
@@ -33,8 +33,13 @@
 </template>
 
 <script>
+import SearchBar from '@/components/SearchBar.vue';
+
 export default {
   name: 'MainHeader',
+  components: {
+    SearchBar,
+  },
   props: {
     title: {
       type: String,

@@ -4,11 +4,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const categoriesRouter = require('./routes/categories');
+const searchResultsRouter = require('./routes/searchResults'); // Agregar esta línea
 
 app.use(express.json());
 app.use(cors());
 
 app.use('/api/categories', categoriesRouter);
+app.use('/api/search-results', searchResultsRouter); // Agregar esta línea
 
 mongoose.connect('mongodb://localhost:27017/marketplace', {
   useNewUrlParser: true,

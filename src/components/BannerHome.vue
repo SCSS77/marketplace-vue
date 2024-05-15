@@ -10,17 +10,16 @@
 
 <script lang="ts">
 import { defineComponent, ref, onMounted } from 'vue';
-import Image from '@/assets/images/explore/activities.jpg';
 
 export default defineComponent({
   name: 'BannerHome',
   setup() {
     const title = 'Todo para tu mascota';
-    const description = 'Entra y descubre los mejores servicios'
+    const description = 'Entra y descubre los mejores servicios';
     const bannerImageUrl = ref<string | null>(null);
 
     onMounted(() => {
-      bannerImageUrl.value = Image;
+      bannerImageUrl.value = require('@/assets/images/explore/activities.jpg');
     });
 
     return {
